@@ -32,6 +32,10 @@ input:checked ~ .dot {
     transform: translateX(100%);
     background-color: #E5005B;
 }
+input.checked-white:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #fff;
+}
 .info-menu.active {
    display: block;
 }
