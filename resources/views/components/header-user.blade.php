@@ -8,7 +8,7 @@
                     </div>
                     <div class="sm:pl-6 pl-3">
                         <div class="text-2xl font-medium">Artis Lutkovskis</div>
-                        <div class="flex items-center">
+                        <div class="flex items-center cursor-pointer">
                             <span class="font-medium text-pink pr-2 sm:text-base text-sm">tipcall.io/artis-lutkovskis</span>
                             <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@
             </div>
             <div class="md:w-1/2 w-full flex mt-6 md:mt-0 justify-center md:justify-end">
                 <a href="#"
-                   class="font-medium text-current border border-current rounded-full px-5 py-3 tracking-wider inline-block	">Preview
+                   class="font-medium text-current border border-current rounded-full px-5 py-3 tracking-wider inline-block hover:bg-current hover:text-white transition-all duration-300">Preview
                     Tipcall Profile</a>
             </div>
         </div>
@@ -33,9 +33,9 @@
         <ul class="flex md:justify-start justify-center min-w-max">
             <li class="py-3 mr-8 border-b-2 border-b-current"><a href="{{ url('dashboard') }}" class="font-semibold">Dashboard</a>
             </li>
-            <li class="py-3 mr-8"><a href="#">My plans</a></li>
-            <li class="py-3 mr-8"><a href="#">My Page</a></li>
-            <li class="py-3 mr-8"><a href="#">Calendar</a></li>
+            <li class="py-3 mr-8"><a href="#" class="hover:text-pink transition-all duration-300">My plans</a></li>
+            <li class="py-3 mr-8"><a href="#" class="hover:text-pink transition-all duration-300">My Page</a></li>
+            <li class="py-3 mr-8"><a href="#" class="hover:text-pink transition-all duration-300">Calendar</a></li>
         </ul>
     </div>
 </div>

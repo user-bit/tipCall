@@ -11,16 +11,17 @@
             </div>
             <div class="info-menu md:basis-1/2 w-full md:justify-end justify-center md:flex hidden">
                 <ul class="flex flex-wrap w-full justify-end">
-                    <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2"><a href="#" class="font-semibold">Home</a></li>
                     <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2">
-                        <a href="#" class="flex">
+                        <a href="#" class="font-semibold hover:text-pink transition-all duration-300">Home</a></li>
+                    <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2">
+                        <a href="#" class="flex hover:text-pink transition-all duration-300">
                             <span>Meetings</span>
                             <span class="w-2.5 h-2.5 bg-pink relative rounded-full block -top-1.5"></span>
                         </a>
                     </li>
-                    <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2"><a href="#">Help</a></li>
+                    <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2"><a href="#" class="hover:text-pink transition-all duration-300">Help</a></li>
                     <li class="relative md:w-fit w-full flex justify-center items-center mb-2" x-data="{ open: false }">
-                        <a href="#" class="flex items-center font-semibold" @click="open = ! open">
+                        <a href="#" class="flex items-center font-semibold hover:text-pink transition-all duration-300" @click="open = ! open">
                             <span class="pr-4">Account</span>
                             <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -31,10 +32,13 @@
                         </a>
                         <ul class="bg-white p-3 rounded-md  absolute shadow top-8 right-0 md:w-28 w-full" x-show="open"
                             @click.outside="open = false" x-transition.duration.500ms>
-                            <li class="mb-2 md:text-left text-center"><a href="{{ url('my-profile') }}" class="text-sm font-medium">My
-                                    profile</a></li>
-                            <li class="mb-2 md:text-left text-center"><a href="" class="text-sm font-medium">Billing</a></li>
-                            <li class="md:text-left text-center"><a href="#" class="text-sm font-medium">Sign out</a></li>
+                            <li class="mb-2 md:text-left text-center">
+                                <a href="{{ url('my-profile') }}" class="text-sm font-medium hover:text-pink transition-all duration-300">
+                                    My profile
+                                </a>
+                            </li>
+                            <li class="mb-2 md:text-left text-center"><a href="" class="text-sm font-medium hover:text-pink transition-all duration-300">Billing</a></li>
+                            <li class="md:text-left text-center"><a href="#" class="text-sm font-medium hover:text-pink transition-all duration-300">Sign out</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -10,8 +10,8 @@
                 <div class="text-gray text-lg font-medium">New meeting today at 15:00</div>
                 <div class="mt-4 text-gray text-sm font-medium">Lorem ipsum dolor sit consectetur adipiscing elit. Nulla varius nisi vel.</div>
                 <div class="flex justify-between mt-4">
-                    <a href="" class="border border-pur-pure bg-gray text-pur-pure font-medium py-2.5 px-6 rounded-full">View calendar</a>
-                    <button class="border border-gray-two font-medium text-gray py-2.5 px-6 rounded-full" @click="open = false">Close</button>
+                    <a href="" class="border border-gray bg-gray text-pur-pure font-medium py-2.5 px-6 rounded-full hover:bg-transparent hover:text-gray transition-all duration-300">View calendar</a>
+                    <button class="border border-gray-two font-medium text-gray py-2.5 px-6 rounded-full hover:bg-gray hover:text-current transition-all duration-300" @click="open = false">Close</button>
                 </div>
             </div>
         </div>

@@ -35,3 +35,16 @@ input:checked ~ .dot {
 .info-menu.active {
    display: block;
 }
+.scroll-custom::-webkit-scrollbar-track {
+    background-color: #F9F9F9;
+    border-right: 20px;
+}
+.scroll-custom::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F9F9F9;
+}
+.scroll-custom::-webkit-scrollbar-thumb {
+    background-color: #4A2545;
+    border-radius: 100vh;
+}
+

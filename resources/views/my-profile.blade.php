@@ -29,7 +29,7 @@
                         </div>
                         <div class="pl-4 w-[calc(100%-3rem)]">
                             <div class="text-lg	font-medium	">Connect calendar</div>
-                            <div class="text-sm font-medium mt-2.5">Connect your calendar to see your availability and bookings <a href="#" class="sm:text-base text-sm text-pink sm:ml-3">Go to Calendar</a></div>
+                            <div class="text-sm font-medium mt-2.5">Connect your calendar to see your availability and bookings <a href="#" class="sm:text-base text-sm text-pink sm:ml-3 hover:text-pur-pure transition-all duration-300">Go to Calendar</a></div>
                         </div>
                     </div>
                     <div class="flex sm:mt-11 mt-5 sm:ml-6 ml-0">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="pl-4 w-[calc(100%-3rem)]">
                             <div class="text-lg	font-medium">Create promo page</div>
-                            <div class="text-sm font-medium mt-2.5">Set up your public profile page that you can share to your social followers or through ads <a href="#" class="sm:text-base text-sm text-pink sm:ml-3">Go to My page</a></div>
+                            <div class="text-sm font-medium mt-2.5">Set up your public profile page that you can share to your social followers or through ads <a href="#" class="sm:text-base text-sm text-pink sm:ml-3 hover:text-pur-pure transition-all duration-300">Go to My page</a></div>
                         </div>
                     </div>
                     <div class="flex sm:mt-11 mt-5 sm:ml-6 ml-0">
@@ -51,7 +51,7 @@
                         </div>
                         <div class="pl-4 w-[calc(100%-3rem)]">
                             <div class="text-lg	font-medium	">Setup Billing</div>
-                            <div class="text-sm font-medium mt-2.5">Create one or more meeting types <a href="#" class="sm:text-base text-sm text-pink sm:ml-3">Set up Stripe</a></div>
+                            <div class="text-sm font-medium mt-2.5">Create one or more meeting types <a href="#" class="sm:text-base text-sm text-pink sm:ml-3 hover:text-pur-pure transition-all duration-300">Set up Stripe</a></div>
                         </div>
                     </div>
                 </div>

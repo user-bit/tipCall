@@ -17,10 +17,10 @@
                 <img src="<?php echo e(asset('images/logo.svg')); ?>">
             </div>
             <div class="md:basis-1/2 w-full flex md:justify-end md:mt-0 items-center justify-center mt-8">
-                <a href="{{ url('sign') }}" class="text-white bg-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 tracking-wider">
+                <a href="{{ url('sign') }}" class="text-white bg-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 tracking-wider hover:bg-transparent hover:text-current transition-all duration-300">
                     Sign up
                 </a>
-                <a href="{{ url('login') }}" class="text-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 ml-2.5 tracking-wider">
+                <a href="{{ url('login') }}" class="text-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 ml-2.5 tracking-wider hover:bg-pur-pure hover:text-white transition-all	duration-300">
                     Login
                 </a>
             </div>
@@ -84,7 +84,7 @@
                             tipcall profile
                         </div>
                         <a href="#"
-                           class="md:mt-8 inline-block text-white bg-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 tracking-wider mt-5">Sign
+                           class="md:mt-8 inline-block text-white bg-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 tracking-wider mt-5 hover:bg-transparent hover:text-current transition-all duration-300">Sign
                             up</a>
                     </div>
                 </div>
@@ -261,7 +261,7 @@
                         It costs 0$ to create and maintain a Tipcall profile, so go ahead and make yourself available for online consultations and earn additional income
                     </div>
                     <div class="mt-4">
-                        <a href="#" class="inline-block text-white bg-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 tracking-wider">Sign up</a>
+                        <a href="#" class="inline-block text-white bg-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 tracking-wider hover:bg-transparent hover:text-current transition-all duration-300">Sign up</a>
                     </div>
                 </div>
                 <div class="md:basis-1/2 w-full">
@@ -283,20 +283,20 @@
             </div>
             <div class="lg:basis-4/12 md:basis-6/12 w-full">
                 <ul class="md:pl-6 md:mt-16 lg:text-left md:text-right text-center p-0 mt-4">
-                    <li class="mb-1"><a href="#" class="text-sm font-medium">Privacy policy</a></li>
-                    <li class="mb-1"><a href="#" class="text-sm font-medium">Cooking policy</a></li>
-                    <li><a href="#" class="text-sm font-medium">Help center</a></li>
+                    <li class="mb-1"><a href="#" class="text-sm font-medium hover:text-pink transition-all duration-300">Privacy policy</a></li>
+                    <li class="mb-1"><a href="#" class="text-sm font-medium hover:text-pink transition-all duration-300">Cooking policy</a></li>
+                    <li><a href="#" class="text-sm font-medium hover:text-pink transition-all duration-300">Help center</a></li>
                 </ul>
             </div>
             <div class="lg:basis-4/12 md:w-full lg:mt-0 mt-8 w-full">
                 <span class="font-medium lg:text-right text-center block">Become an online consultant instantly</span>
                 <div class="basis-1/2 flex lg:justify-end justify-center items-center mt-4">
-                    <button class="text-white bg-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 tracking-wider">
+                    <a href="{{ url('sign') }}" class="text-white bg-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 tracking-wider hover:bg-transparent hover:text-current transition-all duration-300">
                         Sign up
-                    </button>
-                    <button class="text-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 ml-2.5 tracking-wider">
+                    </a>
+                    <a href="{{ url('login') }}" class="text-pur-pure border border-pur-pure rounded-full font-medium px-6 py-2 ml-2.5 tracking-wider hover:bg-pur-pure hover:text-white transition-all duration-300">
                         Login
-                    </button>
+                    </a>
                 </div>
                 <span class="mt-10 block text-gray-three lg:text-right text-center text-sm">© SIA Tipcall 2022</span>
             </div>
