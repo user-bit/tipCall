@@ -1,61 +1,54 @@
 @extends('layouts.main')
-@section('title', 'TipCall - My-profile')
+@section('title', 'TipCall - my-plans')
 @section('content')
     <x-header/>
     <main>
-        <x-header-user/>
-        <div class="md:pt-8 pt-4 bg-gray pb-10">
-            <div class="container mx-auto px-4">
-                <div class="dashboard-content__title text-2xl font-medium mt-2">Dashboard</div>
-                <div class="font-medium text-lg	sm:mt-8 mt-4">Set up your profile</div>
-                <div class="relative">
-                    <div class="absolute w-px bg-gray-three top-0 bottom-10 sm:left-10 left-4"></div>
-                    <div class="flex sm:mt-11 mt-5 sm:ml-6 ml-0">
-                        <div class="w-8 h-8 flex justify-center items-center bg-green rounded-full relative z-10">
-                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.91406 6.88087L5.03245 10.3735L12.8284 1.64197" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+        <div class="bg-gray ">
+            <div class="container mx-auto px-4 flex justify-between">
+                <x-left-menu/>
+                <div class="w-3/4 pt-12 pl-8">
+                    <div class="text-2xl font-medium">My Profile</div>
+                    <div class="flex justify-between mt-10	">
+                        <div class="text-center w-1/4">
+                            <img src="http://tipcall.loc/images/default-a.svg" class="mx-auto w-32 h-32">
+                            <div class="mt-2 relative border border-pur-pure inline-flex rounded-full px-4 py-1.5 cursor-pointer">
+                                <input type="file" class="absolute inset-0 opacity-0">
+                                <span class="font-medium">Select image</span>
+                            </div>
                         </div>
-                        <div class="pl-4 w-[calc(100%-3rem)]">
-                            <div class="text-lg	font-medium	">Create plans</div>
-                            <div class="text-sm font-medium mt-2.5">Create one or more meeting types</div>
-                        </div>
-                    </div>
-                    <div class="flex sm:mt-11 mt-5 sm:ml-6 ml-0">
-                        <div class="w-8 h-8 flex justify-center items-center bg-white border border-gray-three rounded-full relative z-10">
-                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.91406 6.88087L5.03245 10.3735L12.8284 1.64197" stroke="#B6B6B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div class="pl-4 w-[calc(100%-3rem)]">
-                            <div class="text-lg	font-medium	">Connect calendar</div>
-                            <div class="text-sm font-medium mt-2.5">Connect your calendar to see your availability and bookings <a href="#" class="sm:text-base text-sm text-pink sm:ml-3 hover:text-pur-pure transition-all duration-300">Go to Calendar</a></div>
-                        </div>
-                    </div>
-                    <div class="flex sm:mt-11 mt-5 sm:ml-6 ml-0">
-                        <div class="w-8 h-8 flex justify-center items-center bg-white border border-gray-three rounded-full relative z-10">
-                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.91406 6.88087L5.03245 10.3735L12.8284 1.64197" stroke="#B6B6B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div class="pl-4 w-[calc(100%-3rem)]">
-                            <div class="text-lg	font-medium">Create promo page</div>
-                            <div class="text-sm font-medium mt-2.5">Set up your public profile page that you can share to your social followers or through ads <a href="#" class="sm:text-base text-sm text-pink sm:ml-3 hover:text-pur-pure transition-all duration-300">Go to My page</a></div>
-                        </div>
-                    </div>
-                    <div class="flex sm:mt-11 mt-5 sm:ml-6 ml-0">
-                        <div class="w-8 h-8 flex justify-center items-center bg-white border border-gray-three rounded-full relative z-10">
-                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.91406 6.88087L5.03245 10.3735L12.8284 1.64197" stroke="#B6B6B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div class="pl-4 w-[calc(100%-3rem)]">
-                            <div class="text-lg	font-medium	">Setup Billing</div>
-                            <div class="text-sm font-medium mt-2.5">Create one or more meeting types <a href="#" class="sm:text-base text-sm text-pink sm:ml-3 hover:text-pur-pure transition-all duration-300">Set up Stripe</a></div>
+                        <div class="w-3/4 pl-3">
+                            <div class="rounded-2xl	border border-pur-pure overflow-hidden">
+                                <div class="text-sm	text-white text-center bg-pur-pure py-4">This information will be available on your public profile after you publish it</div>
+                                <div class="p-6">
+                                    <div class="mb-6">
+                                        <label class="font-medium block text-sm">Full Name</label>
+                                        <input
+                                            class="mt-2 h-12 px-4 rounded-md border border-gray-two w-full outline-0	placeholder:text-gray-four text-pur-pure"
+                                            type="text" placeholder="Artis Lutkovskis">
+                                    </div>
+                                    <div class="mb-6">
+                                        <label class="font-medium block text-sm">Slogan</label>
+                                        <input
+                                            class="mt-2 h-12 px-4 rounded-md border border-gray-two w-full outline-0	placeholder:text-gray-four text-pur-pure"
+                                            type="text" placeholder="UI/UX designer">
+                                    </div>
+                                    <div class="mb-6">
+                                        <label class="font-medium block text-sm mb-2">Description</label>
+                                        <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+                                        <textarea name="text" id="editor" rows="10" cols="80"></textarea>
+                                        <script>ClassicEditor.create(document.querySelector('#editor'))</script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex wrap">
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
 @endsection

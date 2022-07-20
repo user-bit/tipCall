@@ -28,9 +28,12 @@
     font-style: normal;
     font-display: swap;
 }
+input:checked ~ .bg-checkbox {
+    background-color: #E5005B;
+}
 input:checked ~ .dot {
     transform: translateX(100%);
-    background-color: #E5005B;
+    background-color: #fff;
 }
 input.checked-white:checked ~ .dot {
     transform: translateX(100%);
@@ -51,4 +54,6 @@ input.checked-white:checked ~ .dot {
     background-color: #4A2545;
     border-radius: 100vh;
 }
-
+.ck-editor__editable_inline {
+    min-height: 118px;
+}

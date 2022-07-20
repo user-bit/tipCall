@@ -37,7 +37,9 @@
             <li class="py-3 mr-8 <?php echo ($_SERVER['REQUEST_URI']=='/my-plans')?'border-b-2 border-b-current':''?>">
                 <a href="{{ url('my-plans') }}" class="<?php echo ($_SERVER['REQUEST_URI']=='/my-plans')?'font-semibold':'hover:text-pink transition-all duration-300'?>">My plans</a>
             </li>
-            <li class="py-3 mr-8"><a href="#" class="hover:text-pink transition-all duration-300">My Page</a></li>
+            <li class="py-3 mr-8 <?php echo ($_SERVER['REQUEST_URI']=='/my-page')?'border-b-2 border-b-current':''?>">
+                <a href="{{ url('my-page') }}" class="<?php echo ($_SERVER['REQUEST_URI']=='/my-page')?'font-semibold':'hover:text-pink transition-all duration-300'?>">My Page</a>
+            </li>
             <li class="py-3 mr-8"><a href="#" class="hover:text-pink transition-all duration-300">Calendar</a></li>
         </ul>
     </div>

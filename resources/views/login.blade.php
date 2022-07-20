@@ -44,7 +44,7 @@
                                         <label for="toggleB" class="flex items-center cursor-pointer">
                                             <div class="relative">
                                                 <input type="checkbox" id="toggleB" class="sr-only">
-                                                <div class="block bg-gray-two w-11 h-6 rounded-full"></div>
+                                                <div class="bg-checkbox block bg-gray-two w-11 h-6 rounded-full"></div>
                                                 <div
                                                     class="dot absolute left-0.5 top-0.5 bg-white w-5 h-5 rounded-full transition"></div>
                                             </div>
