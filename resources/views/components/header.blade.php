@@ -19,7 +19,7 @@
                             <span class="w-2.5 h-2.5 bg-pink relative rounded-full block -top-1.5"></span>
                         </a>
                     </li>
-                    <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2"><a href="#" class="hover:text-pink transition-all duration-300">Help</a></li>
+                    <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2"><a href="{{ url('faq') }}" class="hover:text-pink transition-all duration-300">Help</a></li>
                     <li class="relative md:w-fit w-full flex justify-center items-center mb-2" x-data="{ open: false }">
                         <a href="#" class="flex items-center font-semibold hover:text-pink transition-all duration-300" @click="open = ! open">
                             <span class="pr-4">Account</span>
