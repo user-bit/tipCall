@@ -12,7 +12,7 @@
             <div class="info-menu md:basis-1/2 w-full md:justify-end justify-center md:flex hidden">
                 <ul class="flex flex-wrap w-full justify-end">
                     <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2">
-                        <a href="#" class="font-semibold hover:text-pink transition-all duration-300">Home</a></li>
+                        <a href="{{ url('dashboard') }}" class="font-semibold hover:text-pink transition-all duration-300">Home</a></li>
                     <li class="md:pr-6 pr-0 md:w-fit w-full flex justify-center items-center mb-2">
                         <a href="#" class="flex hover:text-pink transition-all duration-300">
                             <span>Meetings</span>
@@ -37,7 +37,8 @@
                                     My profile
                                 </a>
                             </li>
-                            <li class="mb-2 md:text-left text-center"><a href="" class="text-sm font-medium hover:text-pink transition-all duration-300">Billing</a></li>
+                            <li class="mb-2 md:text-left text-center">
+                                <a href="{{ url('billing') }}" class="text-sm font-medium hover:text-pink transition-all duration-300">Billing</a></li>
                             <li class="md:text-left text-center"><a href="#" class="text-sm font-medium hover:text-pink transition-all duration-300">Sign out</a></li>
                         </ul>
                     </li>

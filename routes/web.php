@@ -24,4 +24,5 @@ Route::get('/my-plans-settings', function () {return view('my-plans-settings');}
 Route::get('/my-page', function () {return view('my-page');});
 Route::get('/my-page-public', function () {return view('my-page-public');});
 Route::get('/my-profile', function () {return view('my-profile');});
+Route::get('/billing', function () {return view('billing');});
 

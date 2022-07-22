@@ -57,3 +57,22 @@ input.checked-white:checked ~ .dot {
 .ck-editor__editable_inline {
     min-height: 118px;
 }
+.form-select {
+    -moz-padding-start: calc(.75rem - 3px);
+    background-image: url("../../public/images/arrow-down.svg");
+    background-position: right 0.75rem center;
+    background-size: 10px 8px;
+    background-repeat: no-repeat;
+}
+.left-menu {
+    position: relative;
+}
+.left-menu:before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top:0;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+}
