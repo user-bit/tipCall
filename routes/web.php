@@ -27,4 +27,5 @@ Route::get('/my-profile', function () {return view('my-profile');});
 Route::get('/billing', function () {return view('billing');});
 Route::get('/preview', function () {return view('preview');});
 Route::get('/faq', function () {return view('faq');});
+Route::get('/calendar-import', function () {return view('calendar-import');});
 
