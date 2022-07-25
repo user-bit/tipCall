@@ -30,7 +30,7 @@
 </div>
 <div class="dashboard-menu md:pt-6 pt-2 bg-white">
     <div class="container mx-auto px-4 overflow-auto sm:pb-0 pb-2">
-        <ul class="flex md:justify-start justify-center min-w-max">
+        <ul class="flex justify-start min-w-max">
             <li class="py-3 mr-8 <?php echo ($_SERVER['REQUEST_URI']=='/dashboard')?'border-b-2 border-b-current':''?>">
                 <a href="{{ url('dashboard') }}" class="<?php echo ($_SERVER['REQUEST_URI']=='/dashboard')?'font-semibold':'hover:text-pink transition-all duration-300'?>">Dashboard</a>
             </li>
