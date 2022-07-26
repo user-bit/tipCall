@@ -9,5 +9,11 @@ window.addEventListener("load", function () {
             document.querySelector(".info-menu").classList.toggle('active');
         });
     }
+    const closeModals = document.querySelectorAll('.close-modal');
+    closeModals.forEach((closeModal) => {
+        closeModal.addEventListener('click', ({currentTarget}) => {
+            document.querySelector(".error-modal").classList.remove('active');
+        });
+    });
 });
 

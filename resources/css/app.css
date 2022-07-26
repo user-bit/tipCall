@@ -76,3 +76,27 @@ input.checked-white:checked ~ .dot {
     background: #fff;
     width: 100%;
 }
+.error {
+    position: relative;
+}
+.error:before {
+    content: "";
+    position: absolute;
+    background: url("../../public/images/error.svg");
+    width: 18px;
+    height: 17px;
+    background-repeat: no-repeat;
+    right: 15px;
+    top: 21px;
+}
+.error-modal {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.error-modal.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}

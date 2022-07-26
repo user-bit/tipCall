@@ -24,6 +24,7 @@ module.exports = {
                 'pink': '#E5005B',
                 'black': '#000',
                 'green' : '#24A439',
+                'red-one' : '#FFF5F9',
             },
             fontFamily: {
                 sans: ['Montserrat', 'sans-serif'],

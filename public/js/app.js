@@ -4987,6 +4987,14 @@ window.addEventListener("load", function () {
       document.querySelector(".info-menu").classList.toggle('active');
     });
   }
+
+  var closeModals = document.querySelectorAll('.close-modal');
+  closeModals.forEach(function (closeModal) {
+    closeModal.addEventListener('click', function (_ref2) {
+      var currentTarget = _ref2.currentTarget;
+      document.querySelector(".error-modal").classList.remove('active');
+    });
+  });
 });
 
 /***/ }),

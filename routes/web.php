@@ -31,4 +31,6 @@ Route::get('/calendar-import', function () {return view('calendar-import');});
 Route::get('/my-availability', function () {return view('my-availability');});
 Route::get('/meetings', function () {return view('meetings');});
 Route::get('/dashboard-no-meeting', function () {return view('dashboard-no-meeting');});
+Route::get('/video-call-room', function () {return view('video-call-room');});
+Route::get('/video-call-ready', function () {return view('video-call-ready');});
 
