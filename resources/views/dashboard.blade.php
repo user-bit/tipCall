@@ -18,7 +18,7 @@
         <div class="md:pt-8 pt-4 bg-gray">
             <div class="container mx-auto px-4">
                 <div class="text-2xl font-medium mt-2">Dashboard</div>
-                <div class="flex flex-wrap md:mt-7 mt-3  bg-white rounded-2xl overflow-hidden border border-gray-two">
+                <d iv class="flex flex-wrap md:mt-7 mt-3  bg-white rounded-2xl overflow-hidden border border-gray-two">
                     <div class="lg:w-1/3 w-full flex sm:p-5 p-3 border-r border-gray-two">
                         <div class="w-1/2">
                             <div class="text-lg font-medium mt-1">Calls made</div>

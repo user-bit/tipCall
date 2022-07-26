@@ -18,6 +18,7 @@ module.exports = {
                 'gray-five': '#F9F9F9',
                 'gray-six': 'rgba(74, 37, 69, 0.1)',
                 'gray-seven': '#ECECEC',
+                'gray-eight': '#3C4043',
                 'pur-pure': '#4A2545',
                 'white': '#ffffff',
                 'pink': '#E5005B',

@@ -30,4 +30,5 @@ Route::get('/faq', function () {return view('faq');});
 Route::get('/calendar-import', function () {return view('calendar-import');});
 Route::get('/my-availability', function () {return view('my-availability');});
 Route::get('/meetings', function () {return view('meetings');});
+Route::get('/dashboard-no-meeting', function () {return view('dashboard-no-meeting');});
 
