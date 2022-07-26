@@ -119,15 +119,15 @@
             </div>
         </div>
 
-        <div class="error-modal active flex items-center px-5 py-4 my-8 mx-auto rounded-2xl bg-red-one border border-pink w-max">
+        <div class="error-modal active flex items-center sm:px-5 sm:py-4 p-2 my-8 mx-auto rounded-lg sm:rounded-2xl bg-red-one border border-pink w-max">
             <div class="mr-4">
-                <img class="w-8	" src="images/error.svg"/>
+                <img class="sm:w-8 w-5" src="images/error.svg"/>
             </div>
             <div class="">
                 <div class="font-semibold text-current">Something went wrong!</div>
-                <div class="text-sm	font-medium">Please enter a correct email address.</div>
+                <div class="text-xs	sm:text-sm font-medium">Please enter a correct email address.</div>
             </div>
-            <div class="close-modal group ml-7 w-10	h-10 rounded-md bg-gray-five flex justify-center items-center top-3 right-3 cursor-pointer hover:bg-pur-pure transition-all duration-300">
+            <div class="close-modal group ml-2 sm:ml-7 sm:w-10 sm:h-10 w-8 h-8 rounded-md bg-gray-five flex justify-center items-center top-3 right-3 cursor-pointer hover:bg-pur-pure transition-all duration-300">
                 <svg width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-white fill-pur-pure">
                     <path d="M10.6491 9.00013L17.6579 1.99094C18.114 1.53502 18.114 0.797859 17.6579 0.341939C17.202 -0.11398 16.4649 -0.11398 16.0089 0.341939L8.99989 7.35114L1.99106 0.341939C1.53493 -0.11398 0.798002 -0.11398 0.342092 0.341939C-0.114031 0.797859 -0.114031 1.53502 0.342092 1.99094L7.35093 9.00013L0.342092 16.0093C-0.114031 16.4653 -0.114031 17.2024 0.342092 17.6583C0.5693 17.8858 0.868044 18 1.16657 18C1.4651 18 1.76363 17.8858 1.99106 17.6583L8.99989 10.6491L16.0089 17.6583C16.2364 17.8858 16.5349 18 16.8334 18C17.132 18 17.4305 17.8858 17.6579 17.6583C18.114 17.2024 18.114 16.4653 17.6579 16.0093L10.6491 9.00013Z"></path>
                 </svg>

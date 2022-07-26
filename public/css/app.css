@@ -1046,6 +1046,9 @@ video {
 .rounded-3xl {
   border-radius: 1.5rem;
 }
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 .border {
   border-width: 1px;
 }
@@ -1649,6 +1652,14 @@ input.checked-white:checked ~ .dot {
     margin-right: 0.5rem;
   }
 
+  .sm\:ml-7 {
+    margin-left: 1.75rem;
+  }
+
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
   .sm\:w-2\/5 {
     width: 40%;
   }
@@ -1681,6 +1692,14 @@ input.checked-white:checked ~ .dot {
     width: 75%;
   }
 
+  .sm\:w-8 {
+    width: 2rem;
+  }
+
+  .sm\:w-10 {
+    width: 2.5rem;
+  }
+
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1703,6 +1722,10 @@ input.checked-white:checked ~ .dot {
 
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:rounded-2xl {
+    border-radius: 1rem;
   }
 
   .sm\:p-6 {
@@ -1819,6 +1842,16 @@ input.checked-white:checked ~ .dot {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 @media (min-width: 768px) {
