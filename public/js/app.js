@@ -4995,7 +4995,57 @@ window.addEventListener("load", function () {
       document.querySelector(".error-modal").classList.remove('active');
     });
   });
+
+  if (document.querySelector(".open-bottom") !== null) {
+    document.querySelector(".open-bottom").addEventListener('click', function (_ref3) {
+      var currentTarget = _ref3.currentTarget;
+      document.querySelector(".open-bottom").classList.toggle('active');
+      document.querySelector(".content-bottom").classList.toggle('active');
+    });
+  }
+
+  addTime();
+  closeItem();
+  var itemDay = document.querySelectorAll('.item-day');
+  itemDay.forEach(function (itemDayItem) {
+    itemDayItem.addEventListener('click', function (_ref4) {
+      var currentTarget = _ref4.currentTarget;
+      event.stopPropagation();
+      var itemDay = document.querySelectorAll('.item-day');
+      itemDay.forEach(function (itemDayItem) {
+        itemDayItem.classList.remove('active');
+      });
+      currentTarget.classList.add('active');
+      var content = currentTarget.querySelector('.item-content').innerHTML;
+      document.querySelector(".result-content-all").innerHTML = content;
+      if (innerWidth > 1024) addTime();
+      closeItem();
+    });
+  });
 });
+
+function addTime() {
+  var addAvl = document.querySelectorAll('.add-avl');
+  addAvl.forEach(function (addAvlItem) {
+    addAvlItem.addEventListener('click', function (_ref5) {
+      var currentTarget = _ref5.currentTarget;
+      event.stopPropagation();
+      var contentItem = currentTarget.closest('.result-content').querySelector(".content-avl-item").innerHTML;
+      currentTarget.closest('.result-content').querySelector(".content-avl").insertAdjacentHTML('beforeend', contentItem);
+      closeItem();
+    });
+  });
+}
+
+function closeItem() {
+  var addAvlClose = document.querySelectorAll('.close-svg');
+  addAvlClose.forEach(function (addAvlCloseItem) {
+    addAvlCloseItem.addEventListener('click', function (_ref6) {
+      var currentTarget = _ref6.currentTarget;
+      currentTarget.closest('.content-avl-i').remove();
+    });
+  });
+}
 
 /***/ }),
 

@@ -22,6 +22,8 @@ module.exports = {
                 'pur-pure': '#4A2545',
                 'white': '#ffffff',
                 'pink': '#E5005B',
+                'pink-one': 'rgba(229, 0, 91, 0.03)',
+                'pink-three': 'rgba(229, 0, 91, 0.08)',
                 'black': '#000',
                 'green' : '#24A439',
                 'red-one' : '#FFF5F9',

@@ -34,3 +34,12 @@ Route::get('/dashboard-no-meeting', function () {return view('dashboard-no-meeti
 Route::get('/video-call-room', function () {return view('video-call-room');});
 Route::get('/video-call-ready', function () {return view('video-call-ready');});
 
+Route::get('new/preview', function () {return view('new/preview');});
+Route::get('new/step-1', function () {return view('new/step-1');});
+Route::get('new/step-2', function () {return view('new/step-2');});
+Route::get('new/step-3', function () {return view('new/step-3');});
+Route::get('new/step-4', function () {return view('new/step-4');});
+Route::get('new/step-5', function () {return view('new/step-5');});
+Route::get('new/step-6', function () {return view('new/step-6');});
+Route::get('new/step-7', function () {return view('new/step-7');});
+
