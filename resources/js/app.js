@@ -1,8 +1,32 @@
 require('./bootstrap');
+import 'swiper/css';
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
+
 import Alpine from 'alpinejs'
 window.Alpine = Alpine
 Alpine.start()
 window.addEventListener("load", function () {
+    new Swiper(".swiper-who", {
+        loop: false,
+        slidesPerView: 1.2,
+        watchOverflow: true,
+        spaceBetween: 15,
+        lazy: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-who__next",
+            prevEl: ".swiper-who__prev"
+        },
+        breakpoints: {
+            640: {slidesPerView: 2},
+            1024: {slidesPerView: 3},
+        }
+    });
+
+
     if (document.querySelector(".open-menu") !== null) {
         document.querySelector(".open-menu").addEventListener('click', ({currentTarget}) => {
             document.querySelector(".open-menu").classList.toggle('active');

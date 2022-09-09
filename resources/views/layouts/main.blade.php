@@ -10,6 +10,7 @@
 </head>
 <body class="font-sans text-base font-normal text-current bg-gray">
 @yield('content')
+
 <script src="{{asset('js/app.js')}}" defer></script>
 </body>
 </html>
