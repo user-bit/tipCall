@@ -8,10 +8,10 @@ window.Alpine = Alpine
 Alpine.start()
 window.addEventListener("load", function () {
     animationPreview();
-    // setInterval(function(){
-    //     document.querySelector('.step-four').classList.remove('active');
-    //     animationPreview()
-    // },20000);
+    setInterval(function(){
+        document.querySelector('.step-four').classList.remove('active');
+        animationPreview()
+    },20000);
 
 
     new Swiper(".swiper-who", {
