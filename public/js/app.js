@@ -4985,6 +4985,11 @@ swiper__WEBPACK_IMPORTED_MODULE_1__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_2__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_2__["default"].start();
 window.addEventListener("load", function () {
+  animationPreview(); // setInterval(function(){
+  //     document.querySelector('.step-four').classList.remove('active');
+  //     animationPreview()
+  // },20000);
+
   new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper-who", {
     loop: false,
     slidesPerView: 1.2,
@@ -5073,6 +5078,22 @@ function closeItem() {
       currentTarget.closest('.content-avl-i').remove();
     });
   });
+}
+
+function animationPreview() {
+  document.querySelector('.step-one').classList.add('active');
+  setTimeout(function () {
+    document.querySelector('.step-one').classList.remove('active');
+    document.querySelector('.step-two').classList.add('active');
+  }, 3500);
+  setTimeout(function () {
+    document.querySelector('.step-two').classList.remove('active');
+    document.querySelector('.step-three').classList.add('active');
+  }, 7500);
+  setTimeout(function () {
+    document.querySelector('.step-three').classList.remove('active');
+    document.querySelector('.step-four').classList.add('active');
+  }, 15000);
 }
 
 /***/ }),

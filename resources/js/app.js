@@ -7,6 +7,13 @@ import Alpine from 'alpinejs'
 window.Alpine = Alpine
 Alpine.start()
 window.addEventListener("load", function () {
+    animationPreview();
+    // setInterval(function(){
+    //     document.querySelector('.step-four').classList.remove('active');
+    //     animationPreview()
+    // },20000);
+
+
     new Swiper(".swiper-who", {
         loop: false,
         slidesPerView: 1.2,
@@ -25,8 +32,6 @@ window.addEventListener("load", function () {
             1024: {slidesPerView: 3},
         }
     });
-
-
     if (document.querySelector(".open-menu") !== null) {
         document.querySelector(".open-menu").addEventListener('click', ({currentTarget}) => {
             document.querySelector(".open-menu").classList.toggle('active');
@@ -84,4 +89,20 @@ function closeItem () {
             currentTarget.closest('.content-avl-i').remove();
         });
     });
+}
+
+function animationPreview () {
+    document.querySelector('.step-one').classList.add('active');
+    setTimeout(function () {
+        document.querySelector('.step-one').classList.remove('active');
+        document.querySelector('.step-two').classList.add('active');
+    }, 3500)
+    setTimeout(function () {
+        document.querySelector('.step-two').classList.remove('active');
+        document.querySelector('.step-three').classList.add('active');
+    }, 7500)
+    setTimeout(function () {
+        document.querySelector('.step-three').classList.remove('active');
+        document.querySelector('.step-four').classList.add('active');
+    }, 15000)
 }
